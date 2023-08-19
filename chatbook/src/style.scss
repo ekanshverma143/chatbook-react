@@ -69,7 +69,7 @@
         display: flex;
         overflow: hidden;
 
-        .chat{ flex: 2;}
+        
         .sidebar{flex: 1; border-right: 1px solid rgb(255, 255, 255);background-color: rgb(158, 201, 238);
         
             .navbar{
@@ -138,9 +138,45 @@
                          
                     }
                     .userchatInfo{
-                        
+                        span{font-size: 18px;font-weight: 500;}
+                        p{font-size: 14px;color: lightgray;
+                        }
                     }
                 }
+            }
+            .chat{
+                 flex: 2;
+                .chatInfo{
+                    height: 50px;
+                    background-color: aquamarine;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    color:black;
+
+                }
+                .chatIcons{
+                    display: flex;
+                    gap: 10px;
+
+                    img{
+                        height: 24px;
+                        cursor: pointer;
+                    }
+
+                }
+                .messages{
+                    background-color: aqua;
+                    padding: 10px;
+                    height: calc(100% - 160px);
+                }
+                .input{
+                    height: 50px;
+                    background-color: white;
+                    padding: 10px;
+                }
+            
             }
         
     }
